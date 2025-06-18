@@ -37,8 +37,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
     sources: [
       {
         src: replaceVariables(options.url || ''),
-        type: options.videotype,
-        autoplay: options.autoplay
+        type: options.videotype
       }
     ]
   }

@@ -34,9 +34,9 @@ const VideoPlayer: React.FC<IVideoPlayerProps> = ({ options }) => {
         player.current.dispose();
       }
     };
-  }, [options]);
+  }, [options]);    
 
-  return <video ref={videoNode} className="video-js" />;
+  return <video autoPlay muted ref={videoNode} className="video-js vjs-default-skin" />;
 };
 
 export default VideoPlayer;
