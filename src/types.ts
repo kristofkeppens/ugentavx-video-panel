@@ -1,5 +1,5 @@
 export interface SimpleOptions {
   url: string;
-  videotype: string;
+  videoType: string;
   autoplay: boolean;
 }

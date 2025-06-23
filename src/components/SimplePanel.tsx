@@ -33,15 +33,6 @@ const getStyles = () => {
 export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fieldConfig, id, replaceVariables }) => {
   const styles = useStyles2(getStyles);
 
-  const videoJsOptions = {
-    sources: [
-      {
-        src: replaceVariables(options.url || ''),
-        type: options.videotype
-      }
-    ]
-  }
-
   return (
     <div
       className={cx(
@@ -52,7 +43,11 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
         `
       )}
     >
-      <VideoPlayer options={videoJsOptions} />
+      <VideoPlayer 
+        url={options.url}
+        videoType={options.videoType}
+        autoplay={options.autoplay}
+      />
     </div>
   );
 };

@@ -4,10 +4,10 @@
   "name": "Video-Panel",
   "id": "ugentavx-video-panel",
   "info": {
-    "keywords": ["panel"],
-    "description": "",
+    "keywords": ["panel", "video", "HLS", "livestream", "videojs"],
+    "description": "A video panel that can display a HLS videostream, via the video.js videoplayer",
     "author": {
-      "name": "Ugent avx"
+      "name": "Kristof Keppens"
     },
     "logos": {
       "small": "img/logo.svg",
