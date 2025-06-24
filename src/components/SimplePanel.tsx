@@ -33,6 +33,10 @@ const getStyles = () => {
 export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fieldConfig, id, replaceVariables }) => {
   const styles = useStyles2(getStyles);
 
+  if ( options.autoplay === true ) {
+    options.autoplay = 'muted';
+  }
+
   return (
     <div
       className={cx(

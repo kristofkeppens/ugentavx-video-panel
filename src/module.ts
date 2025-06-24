@@ -11,7 +11,7 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
       defaultValue: 'https://localhost/',
     })
     .addTextInput({
-      path: 'videotype',
+      path: 'videoType',
       name: 'videotype',
       description: 'video type',
       defaultValue: 'application/x-mpegURL',
