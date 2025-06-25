@@ -39,7 +39,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 }],
                 autoplay: autoplay,
                 controls: true,
-                fluid: true
+                fluid: true,
+                "vtt.js": ''
             });
         } 
     }, [autoplay, url, videoType]);
