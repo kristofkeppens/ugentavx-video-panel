@@ -37,10 +37,10 @@ jobs:
       - name: Build the plugin 
         run: npm run build --if-present
       - name: Rename plugin build folder for distribution
-        run: mv dist dist/ugentavx-video-panel
+        run: mv dist build/ugentavx-video-panel
       - uses: actions/upload-artifact@v4
         with:
           name: ugentavx-video-panel-${{ github.ref_name }}
-          path: dist/
+          path: build/
           compression-level: 6
           overwrite: true
