@@ -36,6 +36,7 @@ jobs:
         run: npm ci
       - name: Build the plugin 
         run: npm run build --if-present
+      - run: mkdir build
       - name: Rename plugin build folder for distribution
         run: mv dist build/ugentavx-video-panel
       - uses: actions/upload-artifact@v4
