@@ -37,6 +37,8 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
     options.autoplay = 'muted';
   }
 
+  let url = replaceVariables(options.url || '')
+
   return (
     <div
       className={cx(
@@ -48,7 +50,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
       )}
     >
       <VideoPlayer 
-        url={options.url}
+        url={url}
         videoType={options.videoType}
         autoplay={options.autoplay}
       />
