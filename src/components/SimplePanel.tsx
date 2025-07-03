@@ -36,8 +36,8 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
   if ( options.autoplay === true ) {
     options.autoplay = 'muted';
   }
-
-  let url = replaceVariables(options.url || '')
+  
+  const url = replaceVariables(options.url)
 
   return (
     <div
